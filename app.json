@@ -1,0 +1,30 @@
+{
+  "name": "Lucina",
+  "description": "Monitor the birth of the Web site",
+  "keywords": [
+    "node",
+    "express",
+    "heroku",
+    "monitor"
+  ],
+  "addons": [
+    "heroku-redis:hobby-dev",
+    "sendgrid:starter"
+  ],
+  "env": {
+    "CHECK_URL": {
+      "description": "",
+      "required": "true"
+    },
+    "CHECK_INTERVAL": {
+      "description": "",
+      "value": "30",
+      "required": "true"
+    },
+    "NOTIFY_MAIL": {
+      "description": "",
+      "value": "30",
+      "required": "false"
+    }
+  }
+}

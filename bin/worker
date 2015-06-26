@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var check = require('lib/birthcheck').check;
+check(process.env.CHECK_URL, function() {
+});
