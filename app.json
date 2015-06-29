@@ -8,7 +8,9 @@
     "monitor"
   ],
   "addons": [
-    "heroku-redis:hobby-dev",
+    "scheduler:standard",
+    "process-scheduler:pet-project",
+    "scheduler:standard",
     "sendgrid:starter"
   ],
   "env": {
