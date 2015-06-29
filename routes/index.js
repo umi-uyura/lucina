@@ -38,12 +38,15 @@ router.post('/', function(req, res, next) {
   }
 
   check(process.env.CHECK_URL,
-        function() {
+        function(err, result) {
           res.render('index',
                      {
                        title: 'Lucina result',
                        url: process.env.CHECK_URL,
-                       interval: process.env.CHECK_INTERVAL
+                       interval: process.env.CHECK_INTERVAL,
+                       checked: true,
+                       res: result,
+                       err: err
                      });
         });
 });

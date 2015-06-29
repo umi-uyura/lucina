@@ -4,6 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   p URL: #{url}
-  p INTERVAL: #{interval}
+  if checked
+    include result.jade
   form(method="POST", action="/")
     input(type="submit", value="RUN")
